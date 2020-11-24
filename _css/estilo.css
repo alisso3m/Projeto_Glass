@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'H2';
+    src: url("../_fonts/TitilliumWeb-Regular.ttf");
+}
+@font-face { /* Importando fontes para o seu projeto */
+    font-family: 'FonteLogo'; /* Nome da fonte */
+    src:url("../_fonts/bubblegum-sans-regular.otf"); /* Caminho da fonte */
+}
+
+/* Formatação do parágrafo */
+p {
+    text-align: justify;
+    text-indent: 50px; /*cria um parágrafo */
+}
+
+/* Formatação dos Links */
+a {
+    color: #606060;
+    text-decoration: none; /* Tira o _ das palavras */
+}
+
+a:hover {
+    text-decoration: underline; /* Só vai ter _ quando o mouse passar por cima das palavras */
+    color: black;
+}
+
+/* Formatando o cabeçalho */
+header#cabecalho img#icone { /*imagem do óculos do cabeçalho */
+    position: absolute;
+    left: 1100px;
+    top: 70px;
+}
+
+header#cabecalho { /*Altera os itens do cabeçalho */
+    border-bottom: 1px #606060 solid; /* Cria uma linha */
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Adiciona uma imagem direto do CSS, o no repeat não vai repetir a imagem - 0px deslocamento lateral, 80px deslocamento vertical */
+}
+/* Formatando as escritas h1 e h2 do cabeçalho */
+header#cabecalho h1 {
+    font-family: 'FonteLogo', Helvetica, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'H2', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+/* Formatando o Body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#dddddd;
+    color: rgba(0, 0, 0, 0, 1);
+    /*background-image: url("");  para adicionar uma imagem no fundo */
+}
+
+/* Formatando a INTERFACE */
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    padding: 15px; /* posição interna dos itens */
+}
+
+/* Formatação de imagens com legendas */
+
+/*  Alterando o container da imagem */
+figure.foto-legenda{ /* o ponto chama a classe criada, exemplo: figure é a tag e o .foto-legenda é a classe */
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black; /* seguindo a sequencia 1 px - deslocamento horizontal, 1px - deslocamento vertical 4px - deslocamento de espalhamento da cor. */
+}
+
+/* Altera as propiedades da imagem */
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Altera o conteudo do container */
+figure.foto-legenda figcaption{
+    opacity: 0%;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* isso cria um box dentro da borda branca */
+    transition: opacity 1s; /* efeito de opacidade */
+}
+
+/* Cria o efeito de sobreposição da imagem */
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* Formatação do MENU */
+
+nav#menu { /*o menu irá flutuar, sera exibido como um bloco */
+    display: block;
+    
+}
+
+nav#menu ul { /*formatação do menu UL */
+    list-style: none;
+    text-transform: uppercase; /* Coloca todas as letras em maíusculas. */
+    position: absolute;
+    top:-20px;
+    left: 620px;
+    
+}
+
+nav#menu li{ /*Formatação do menu li */
+    display: inline-block; /* deixa os intens dos menus um ao lado do outro */
+    background-color: #dddddd;
+    padding: 10px; /* Aumenta o espaço dentro da caixa que contem o nome de cada opção */
+    margin: 2px; /* Aumenta o espaço externo das opções */
+    transition: background-color 1s; /* coloca transição no menu */
+    border-radius: 4px;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+    
+}
+
+nav#menu h1 { /*vai esconder o item Menu principal */
+    display: none;
+}
+
+nav#menu a{ /* Altera as propriedades do menu, escrita, cor da letra, etc... */
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover { /* Efeito de mudança do menu */
+    color: white;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+/* Formatando o Artigo (article) */
+article#noticia-principal h2{ /* Formata tudo que tiver em h2 dentro de article */
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin:10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', 'san-serif';
+    font-size: 20pt;
+    color:#606060;
+    margin-bottom: 0px;
+    margin-top:0px;
+    
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color:#cecece;
+    background-color: white;
+    margin:0px;
+    
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color:#adacac;
+}
+
+.direita {
+    text-align: right;
+}
+/* Formatando a tabela de especificações */
+table#tabelaespec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+/* Formatando as colunas */
+table#tabelaespec td{ 
+    border: 1px solid #606060;
+    padding:10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaespec td.ce { /* Coluna da esquerda */
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;    
+}
+
+table#tabelaespec td.cd { /* Coluna da direita */
+    background-color: #cecece;
+    
+}
+
+table#tabelaespec caption{ /*Título da tabela */
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaespec caption span{ /*Informação da data que ficará na parte superior a direita da tabela */
+    display: block;
+    float:right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}   
+
+/* Formatando o ASIDE, a coluna do site */
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top:10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 15pt;
+    color:white;
+    padding: 5px;
+}
+/* Formatando o rodapé */
+footer#rodape { 
+    clear: both; /* Limpe as configurações dos dois lados e coloca o rodapé no local exato. */
+    border-top: 1px solid #606060;
+
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+/* Formatando as imagens da pagina home */
+
+video#filme1 {
+    width: 400px;
+    margin-left: 40px;
+}
+
+video#filme2 {
+    width: 350px;
+
+}

@@ -1,0 +1,132 @@
+ /* Estilizando a lista não enumerada do arquvio fotos.html */
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ /* Estilizando a lista do arquivo fotos.html */
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    text-align: center;
+    transition: all 0.3s ease-in; /* Cria o efeito de maximizar a imagem */
+}
+/* Efeito para alterar a foto */
+ul#album-fotos li:hover{
+    transform: scale(1.5);
+}
+
+
+ /* Estilizando a span não enumerada do arquvio fotos.html */
+ul#album-fotos li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-size: 9pt;
+    line-height: 370px; /* Faz com que a legenda desca */
+    padding: 5px;
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto01 {
+    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto02 {
+    background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto02:hover{ /*Efeito de Zoom na foto */
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto03 {
+    background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;   
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto03:hover{ /*Efeito de Zoom na foto */
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto04 {
+    background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto04:hover{ /*Efeito de Zoom na foto */
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto05 {
+    background: url('../_imagens/galeria-05.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto05:hover{ /*Efeito de Zoom na foto */
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+}
+
+/* Colocando a imagem no quadrado usando o background e o caminho onde se encontra a determinada foto
+ul é a lista, #album-fotos é o nome que foi dado a lista é a lista interna li, #foto01 foi o nome dado a cada foto no arquivo fotos.html*/
+ul#album-fotos li#foto06 {
+    background: url('../_imagens/galeria-06.jpg') no-repeat;
+    background-position: 50% 50%; /* muda o posicionamento da imagem */
+    background-size: 400px 400px; /* O tamanho da imagem do fundo */
+    color: white;
+}
+
+ /*Efeito de Zoom na foto */
+ul#album-fotos li#foto06:hover{ /*Efeito de Zoom na foto */
+    background-position: 0px 0px; /*vai deixar a foto com posicionamento default */
+    background-size: 200px 200px; /*Altera o tamanho da imagem para caber em toda a tela */
+}

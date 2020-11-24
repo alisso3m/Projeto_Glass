@@ -1,0 +1,26 @@
+/* Estilizando o vídeo que está no multimidia.html */
+div#tv-radio { 
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url('../_imagens/radio-tv.png') no-repeat; /* Será a imagem de fundo para encaixe do vídeo */
+}
+
+/* Posicionamento do arquivo mp3 que está no multimidia.html, posicionado para encaixar no rádio */
+audio#musica { 
+    display: block;
+    position: relative;
+    left: 600px ;
+    top: 490px ;
+    width: 250px;
+}
+
+/* Posicionamento do arquivo mp3 que está no multimidia.html, posicionado para encaixar na TV */
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 80px;
+    top:65px;
+    width: 460px;
+}
